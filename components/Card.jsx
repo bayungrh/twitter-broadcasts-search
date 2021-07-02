@@ -8,6 +8,7 @@ const CardComponent = () => {
   const [loading, setLoading] = useState(false);
 
   const searchTweet = () => {
+    if (!query) return;
     setLoading(true);
     return rp({
       uri: `http://localhost:4000/api/search?query=${query}`,
