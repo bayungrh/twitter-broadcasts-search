@@ -1,0 +1,18 @@
+{
+  "name": "twitter-broadcasts-search",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev -p 4000",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "bootstrap": "^4.6.0",
+    "next": "9.5.2",
+    "react": "16.13.1",
+    "react-bootstrap": "^1.6.1",
+    "react-dom": "16.13.1",
+    "request-promise": "^4.2.6"
+  }
+}
