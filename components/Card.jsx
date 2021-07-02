@@ -12,9 +12,6 @@ const CardComponent = (props) => {
     return rp({
       uri: `http://localhost:4000/api/search?query=${query}`,
       method: 'GET',
-      headers: {
-        'Authorization': `Bearer AAAAAAAAAAAAAAAAAAAAAO5xOAEAAAAAqv6lN%2FQTgqaE4OL%2F1Zjz7eraGbg%3D482czzfeQJhu8c3RVF9t8zivq72yC36OiruycdnoJURfLsPDml`
-      },
       json: true
     }).then((res) => {
       console.log('res', res);
