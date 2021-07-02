@@ -1,5 +1,5 @@
 import { Card, Button, CardColumns, InputGroup, FormControl } from 'react-bootstrap';
-import React, { useState } from 'react';
+import { useState } from 'react';
 import rp from 'request-promise';
 
 const CardComponent = (props) => {
@@ -18,11 +18,10 @@ const CardComponent = (props) => {
       json: true
     }).then((res) => {
       console.log('res', res);
-        setData(res);
-      })
-      .finally(() => {
-        setLoading(false);
-      })
+      setData(res);
+    }).finally(() => {
+      setLoading(false);
+    });
   }
 
   const inputQuery = (e) => {
