@@ -2,12 +2,12 @@ import { Card, Button, CardColumns, InputGroup, FormControl } from 'react-bootst
 import { useState } from 'react';
 import rp from 'request-promise';
 
-const CardComponent = (props) => {
+const CardComponent = () => {
   const [data, setData] = useState([]);
   const [query, setQuery] = useState('');
   const [loading, setLoading] = useState(false);
 
-  const searchTweet = (e) => {
+  const searchTweet = () => {
     setLoading(true);
     return rp({
       uri: `http://localhost:4000/api/search?query=${query}`,
@@ -24,7 +24,6 @@ const CardComponent = (props) => {
   const inputQuery = (e) => {
     setQuery(e.target.value);
   }
-  
 
   return (
     <div className="container mt-5">
