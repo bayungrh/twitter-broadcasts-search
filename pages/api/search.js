@@ -1,6 +1,6 @@
 import rp from 'request-promise';
 
-export default async (req, res) => {
+export default (req, res) => {
   const query = req.query.query;
   const limit = 50;
   return rp({
