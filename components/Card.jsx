@@ -29,12 +29,11 @@ const CardComponent = () => {
     <div className="container mt-5">
       <InputGroup className="mb-3">
         <FormControl
-          placeholder="Recipient's username"
-          aria-label="Recipient's username"
+          aria-label="example: spain vs switzerland live stream"
           aria-describedby="basic-addon2"
           onChange={inputQuery}
           value={query}
-          placeholder="spain vs switzerland live stream"
+          placeholder="example: spain vs switzerland live stream"
         />
         <InputGroup.Append>
           <Button variant="outline-secondary" onClick={searchTweet}>Search</Button>
