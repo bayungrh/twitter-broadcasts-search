@@ -1,9 +1,9 @@
-import Card from '../components/Card';
+import MainComponent from '../components/Main';
 
 export default function Home() {
   return (
     <div>
-      <Card/>
+      <MainComponent/>
     </div>
   )
 }

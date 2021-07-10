@@ -8,11 +8,12 @@
     "start": "next start"
   },
   "dependencies": {
-    "bootstrap": "^4.6.0",
     "next": "9.5.2",
     "react": "16.13.1",
-    "react-bootstrap": "^1.6.1",
     "react-dom": "16.13.1",
-    "request-promise": "^4.2.6"
+    "request": "^2.88.2",
+    "request-promise": "^4.2.6",
+    "semantic-ui-css": "^2.4.1",
+    "semantic-ui-react": "^2.0.3"
   }
 }
