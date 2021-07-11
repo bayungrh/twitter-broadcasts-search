@@ -2,7 +2,7 @@ import rp from 'request-promise';
 
 export default (req, res) => {
   const query = req.query.query;
-  const limit = 50;
+  const limit = 100;
   return rp({
     uri: `https://api.twitter.com/2/tweets/search/recent?query=${decodeURIComponent(query)}&tweet.fields=author_id,created_at,entities,geo,in_reply_to_user_id,lang,possibly_sensitive,referenced_tweets,source&max_results=${limit}`,
     method: 'GET',
